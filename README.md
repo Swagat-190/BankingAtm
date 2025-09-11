@@ -46,3 +46,12 @@ Supports user registration, login, balance check, deposit, withdrawal, and fund 
 ```bash
 git clone https://github.com/Swagat-190/BankingAtm.git
 cd BankingAtm
+
+Setup MySQL database
+CREATE DATABASE BankAtm;
+ Api endpoints
+| Method | Endpoint             | Description         | Body                                                                             |
+| ------ | -------------------- | ------------------- | -------------------------------------------------------------------------------- |
+| POST   | `/api/auth/register` | Register a new user | `{ "email": "user@example.com", "username": "user", "password": "password123" }` |
+| POST   | `/api/auth/login`    | Login user          | `{ "email": "user@example.com", "password": "password123" }`                     |
+
