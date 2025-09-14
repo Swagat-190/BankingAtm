@@ -34,7 +34,13 @@ public class SecurityConfig {
                 .cors(cors -> {}) // uses corsConfigurationSource
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // allow preflight requests
-                        .requestMatchers("/api/auth/**").permitAll() // login/register are public
+                        .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers(
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**",
+                                "/swagger-ui.html"
+                        ).permitAll()
+                        // login/register are public
                         .anyRequest().authenticated() // all other endpoints need authentication
                 )
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
