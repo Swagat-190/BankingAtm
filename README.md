@@ -55,6 +55,15 @@ This project allows user registration, login, account operations (balance check,
 | `/api/accounts/transfer`     | POST   | Transfer money between accounts              | `fromEmail=from@mail.com, toEmail=to@mail.com, amount=100` | `true/false`             |
 
 ---
+## Screenshots
+
+### Authentication
+![UserRegestration APIs](UserRegister.png)
+![UserLogin APIs](UserLogin.png)
+
+### Account Management
+![Account Creation](UserAccountCreate.png)
+![Withdraw Balance Creation](UserWithdraw.png)
 
 ##  How to Run Locally
 
