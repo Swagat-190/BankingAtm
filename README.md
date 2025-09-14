@@ -62,7 +62,7 @@ This project allows user registration, login, account operations (balance check,
 ![UserLogin APIs](UserLogin.png)
 
 ### Account Management
-![Account Creation](UserAccountCreate.png)
+![Account Creation](UserCreateAccount.png)
 ![Withdraw Balance Creation](UserWithdraw.png)
 
 ##  How to Run Locally
